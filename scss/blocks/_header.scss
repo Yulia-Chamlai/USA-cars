@@ -1,0 +1,107 @@
+.header {
+  background-image: url("./images/header-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 300px;
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 0 45px;
+    flex-wrap: wrap;
+  }
+  &__logo-link {
+    padding-right: 15px;
+  }
+  &__content {
+    display: flex;
+    padding-top: 60px;
+    position: relative;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      position: static;
+      text-align: center;
+    }
+    @media (max-width: 576px) {
+      padding-top: 0;
+    }
+  }
+  &__info {
+    @media (max-width: 768px) {
+      padding-bottom: 40px;
+    }
+  }
+  &__info-title {
+    width: 765px;
+    font-size: 72px;
+    line-height: 95px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    @media (max-width: 992px) {
+      font-size: 64px;
+      line-height: 80px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 55px;
+      line-height: 80px;
+    }
+    @media (max-width: 576px) {
+      font-size: 38px;
+      line-height: 57px;
+    }
+  }
+
+  &__info-subtitle {
+    font-size: 36px;
+    line-height: 53px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    @media (max-width: 992px) {
+      font-size: 32px;
+      line-height: 45px;
+    }
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
+    @media (max-width: 576px) {
+      font-size: 26px;
+      line-height: 42px;
+    }
+  }
+
+  &__info-text {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  &__info-btn {
+    margin-bottom: 70px;
+  }
+  &__info-social {
+    padding: 0 0 119px 66px;
+    @media (max-width: 768px) {
+      padding: 0;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: -200px;
+    @media (max-width: 992px) {
+      max-width: 80%;
+    }
+    @media (max-width: 768px) {
+      max-width: 100%;
+      position: static;
+    }
+  }
+}

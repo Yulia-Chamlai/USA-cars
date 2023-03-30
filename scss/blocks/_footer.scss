@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #21062a;
+  height: 100px;
+  padding: 40px 0;
+  @media (max-width: 767px) {
+    height: auto;
+    padding: 20px;
+  }
+  // .footer__logo
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
